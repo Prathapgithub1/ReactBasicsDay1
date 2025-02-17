@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>React</title>
+        <link rel="stylesheet" href="./css.css">
+    </head>
+    <body>
+        <!-- <h1>Hello React From HTML</h1> -->
+        <!-- <div id="root"></div>
+     <script>
+        let root=document.getElementById('root');
+        let h1Element=document.createElement('h1');
+        h1Element.textContent="Hello React From Javascript";
+        root.appendChild(h1Element)
+     </script> -->
+     <div id="root"></div>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"
+            crossorigin></script>
+        <script
+            src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+            crossorigin></script>
+        <script>
+            let h1Element=React.createElement('h1',{id:"heading"},'Well come to React');
+            console.log(h1Element)
+            let renderElement=ReactDOM.createRoot(document.getElementById('root'));
+            renderElement.render(h1Element)
+        </script>
+
+    </body>
+</html>
